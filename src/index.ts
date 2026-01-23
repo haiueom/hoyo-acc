@@ -20,13 +20,10 @@ app.get('/', async (c) => {
 })
 
 app.get('/api', (c) =>
-	c.json<ApiResponse>(
-		{
-			success: true,
-			message: 'API is running.',
-		},
-		200,
-	),
+	c.json<ApiResponse>({
+		success: true,
+		message: 'API is running.',
+	}),
 )
 
 app.use('/api/accounts/*', (c, next) =>
