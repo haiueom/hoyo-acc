@@ -7,18 +7,21 @@
 	"name": "hoyo-acc",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-09-27",
-	"assets": {
-		"binding": "ASSETS",
-		"directory": "./public"
-	},
 	"observability": {
 		"enabled": true
-	}
+	},
 	/**
-	 * Smart Placement
-	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
+	 * D1 Database Binding
+	 * https://developers.cloudflare.com/workers/wrangler/configuration/#d1-databases
 	 */
-	// "placement": {  "mode": "smart" }
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "hoyo-acc-db",
+			"database_id": "1db83dcc-8da2-457a-805b-8d05fc81f683"
+		}
+	],
+	// secret environment variables
 	/**
 	 * Bindings
 	 * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
