@@ -1,10 +1,10 @@
 export interface Account {
-	id?: string
+	id: number
 	name: string
 	cookie_token: string
 	account_id: number
-	created_at?: Date
-	updated_at?: Date
+	created_at: string
+	updated_at: string
 }
 
 export interface ApiResponse<T = unknown> {

@@ -2,16 +2,19 @@
 	"name": "hoyo-acc",
 	"type": "module",
 	"scripts": {
-		"dev": "pnpm run predb-local && wrangler types && wrangler dev",
-		"deploy": "pnpm run predb-remote && wrangler types && wrangler deploy --minify",
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
 		"cf-typegen": "wrangler types",
-		"predb-remote": "wrangler d1 migrations apply DB --remote",
-		"predb-local": "wrangler d1 migrations apply DB --local"
+		"db:local": "wrangler d1 migrations apply DB --local",
+		"db:remote": "wrangler d1 migrations apply DB --remote"
 	},
 	"dependencies": {
-		"hono": "^4.11.7"
+		"hono": "^4.11.7",
+		"zod": "^4.3.6",
+		"@hono/zod-validator": "^0.7.6"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240208.0",
 		"wrangler": "^4.63.0"
 	}
 }
