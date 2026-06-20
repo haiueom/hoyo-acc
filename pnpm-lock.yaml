@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.7.6
-        version: 0.7.6(hono@4.12.21)(zod@4.4.1)
+        version: 0.7.6(hono@4.12.25)(zod@4.4.1)
       hono:
-        specifier: ^4.12.21
-        version: 4.12.21
+        specifier: ^4.12.25
+        version: 4.12.25
       zod:
         specifier: ^4.4.1
         version: 4.4.1
@@ -445,8 +445,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  hono@4.12.21:
-    resolution: {integrity: sha512-uV63apnb0kyPtAUwoWgaGh9HyIFcv8lgmzPZSiTBQAFOFGIzka5EZ1dZocmGnn0XdX0+XTqJ6Tqv7selMuGLRQ==}
+  hono@4.12.25:
+    resolution: {integrity: sha512-2NFaIyNVgJmBs/ecmtGzlmluTFs5cHEWGTdu0t1HBwYzoGXOL5nUQBRMXsXWla5i4KkG//QMzVP88m1+I3fdAQ==}
     engines: {node: '>=16.9.0'}
 
   kleur@4.1.5:
@@ -637,9 +637,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/zod-validator@0.7.6(hono@4.12.21)(zod@4.4.1)':
+  '@hono/zod-validator@0.7.6(hono@4.12.25)(zod@4.4.1)':
     dependencies:
-      hono: 4.12.21
+      hono: 4.12.25
       zod: 4.4.1
 
   '@img/colour@1.1.0': {}
@@ -803,7 +803,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  hono@4.12.21: {}
+  hono@4.12.25: {}
 
   kleur@4.1.5: {}
 
